@@ -1,11 +1,11 @@
 import '../styles/globals.css'
-import { QuiscoProvider } from '../context/QuiscoProvider'
+import { QuioscoProvider } from '../context/QuioscoProvider'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <QuiscoProvider>
+    <QuioscoProvider>
       <Component {...pageProps} />
-    </QuiscoProvider>
+    </QuioscoProvider>
   )
 }
 

@@ -3,7 +3,7 @@ import axios from "axios"
 
 const QuioscoContext = createContext()
 
-const QuiscoProvider = ({children}) => {
+const QuioscoProvider = ({children}) => {
     const [categorias, setCategorias] = useState([])
     const [categoriaActual, setCategoriaActual] = useState({})
     const [producto, setProducto] = useState({})
@@ -33,7 +33,7 @@ const QuiscoProvider = ({children}) => {
         setProducto(producto)
     }
 
-    const handleChangetModal = () => {
+    const handleChangeModal = () => {
         setModal(!modal)
     }
 
@@ -46,7 +46,7 @@ const QuiscoProvider = ({children}) => {
         producto,
         handleSetProducto,
         modal,
-        handleChangetModal
+        handleChangeModal
 
     }}>
         {children}
@@ -55,7 +55,7 @@ const QuiscoProvider = ({children}) => {
 }
 
 export {
-    QuiscoProvider
+    QuioscoProvider
 }
 
 export default QuioscoContext
